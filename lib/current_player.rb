@@ -5,9 +5,6 @@ def turn_count(board)
     # nice way to get around non DRY conditions like this..
     # turn_counter += 1 if ["X", "O"].include?(position)
     turn_counter += 1 if ["X", "O"].include(position)
-    if position == "X" || position == "O"
-      turn_counter += 1
-    end
   end
 
   return turn_counter
